@@ -1,78 +1,311 @@
-*{box-sizing: border-box;
-margin: 0%}
-
-.index_html{display: flex;
-flex-wrap: wrap;
-background-attachment: fixed;
-background-color: #929B89;
-color: #101705;
-font-family: 'Cormorant', serif;
-text-align: center;}
-
-.home_nav_bar{display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-background-color: #434C3B;
-position: fixed;
-top: 0;
-width: 100%;
-height: 8%}
-
-.home_nav_bar a{display: flex;
-flex: wrap;
-text-decoration: none;}
-
-.home_nav_brand_name{display: flex;
-font-size: 18px;
-padding-left: 5px;
-padding-top: 9px}
-
-.home_nav_drinks{display: flex;
-padding-left: 850px;
-padding-top: 13px;}
-
-.home_nav_pastries{display: flex;
-padding-right: 20px;
-padding-top: 13px}
-
-.home_body_image{display: flex;
-justify-content: center;
-padding-top: 100px;}
-
-.home_body_header{display: flex;
-justify-content: center;}
-
-.home_body_para{
-font-family: 'Mulish', sans-serif;
-font-size: 20px;
-padding-left: 150px;
-padding-right: 150px;}
-
-.home_footer{display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-background-color: #434C3B;
-bottom: 0;
-width: 100%;
-height: 8%}
-
-.home_footer a{display: flex;
-flex: wrap;
-text-decoration: none;
-padding-top: 14px;}
-
-.drinks_html{display: flex;
-flex-wrap: wrap;
-background-attachment: fixed;
-background-color: #929B89;
-font-family: 'Cormorant', serif;
-text-align: center;}
-
-.pastries_html{display: flex;
-flex-wrap: wrap;
-background-attachment: fixed;
-background-color: #929B89;
-font-family: 'Cormorant', serif;
-text-align: center;}
+    *{box-sizing: border-box;
+    margin: 0%}
+    
+    .home_html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-attachment: fixed;
+    background-color: #929B89;
+    color: #101705;
+    font-family: 'Cormorant', serif;
+    text-align: center;}
+    
+    .home_nav_bar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 8%}
+    
+    .home_nav_bar a{
+    display: flex;
+    flex: wrap;
+    text-decoration: none;}
+    
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+    
+    li {
+    float: left;
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    font-weight: bold;}
+    
+    a {display: block;
+    padding: 15px;}
+    
+    .home_body_image{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;}
+    
+    .home_body_header{
+    display: flex;
+    justify-content: center;}
+    
+    .home_body_para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    padding-left: 290px;
+    padding-right: 290px;}
+    
+    .location_address{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;}
+    
+    .home_footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    margin-top: auto;}
+    
+    .home_footer a{
+    display: flex;
+    flex: wrap;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: medium;}
+    
+    .drinks_html{
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-color: #929B89;
+    color: #101705;
+    font-family: 'Cormorant', serif;
+    text-align: center;}
+    
+    .drinks_nav_bar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 8%}
+    
+    .drinks_nav_bar a{
+    display: flex;
+    flex: wrap;
+    text-decoration: none;}
+    
+    .drinks_body_header{
+    display: flex;
+    justify-content: center;}
+    
+    .drinks_body_para{
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    padding-left: 320px;
+    padding-right: 320px;}
+    
+    .drinks_body_images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;}
+    
+    .drinks_body_images_texts{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Mulish', sans-serif;
+    flex-wrap: wrap;
+    font-size: 15px;}
+    
+    .iced_coffee_text{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;}
+    
+    .drinks_footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    margin-top: auto;}
+    
+    .drinks_footer a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: medium;}
+    
+    .pastries_html{
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-color: #929B89;
+    color: #101705;
+    font-family: 'Cormorant', serif;
+    text-align: center;}
+    
+    .pastries_nav_bar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 8%}
+    
+    .pastries_nav_bar a{
+    display: flex;
+    flex: wrap;
+    text-decoration: none;}
+    
+    .pastries_body_header{
+    display: flex;
+    justify-content: center;}
+    
+    .pastries_body_para{
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    padding-left: 320px;
+    padding-right: 320px;}
+    
+    .pastries_body_images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;}
+    
+    .pastries_body_images_texts{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Mulish', sans-serif;
+    flex-wrap: wrap;
+    font-size: 15px;}
+    
+    .cookies_text{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;}
+    
+    .pastries_footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    margin-top: auto;}
+    
+    .pastries_footer a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: medium;}
+    
+    .contact_page{
+    background-color: #929B89;
+    padding: 200px;
+    padding-top: 100px;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    color: #101705;
+    font-size: larger;}
+    
+    .contact_nav_bar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%}
+    
+    .contact_nav_bar a{
+    display: flex;
+    flex: wrap;
+    text-decoration: none;}
+    
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;}
+    
+    input[type=submit] {
+    background-color: #41521F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Cormorant', serif;
+    font-size: medium;}
+    
+    .about_html{
+    background-color: #929B89}
+    
+    .about_nav_bar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #434C3B;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%}
+    
+    .about_nav_bar a{
+    display: flex;
+    flex: wrap;
+    text-decoration: none;}
+    
+    .about_page{
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+    padding-top: 100px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    color: #101705;
+    font-size: larger;}
+    
+    table, th, td{
+    border: 0.5px solid;
+    text-align: center;}
+    
+    table{
+    border-collapse: collapse;
+    width: 50%}
